@@ -2,26 +2,66 @@
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <div *ngFor="let t of ToDo" class="taskContainer">
-                    <div class="task headerTask">
-                        <h3>{{t.name}}</h3>
-                    </div>
-                    <div class="task mainTask">
-                        <div class="contentTask">
-                            <h3>{{t.content}}</h3>
+                <div class="NameNav">
+                    <p><b>To Do</b></p>
+                </div>
+                <div class="main">
+                    <div *ngFor="let t of ToDo" class="taskContainer">
+                        <div class="task headerTask">
+                            <p><b>{{t.name}}</b></p>
+                        </div>
+                        <div class="task mainTask">
+                            <div class="contentTask">
+                                <p>{{t.content}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-3">
+                <div class="NameNav">
+                    <h5>In Progress</h5>
+                </div>
                 <div *ngFor="let t of InProgress" class="taskContainer">
                     <div class="task headerTask">
-                        <h3>{{t.name}}</h3>
+                        <h5>{{t.name}}</h5>
                     </div>
                     <div class="task mainTask">
                         <div class="contentTask">
-                            <h3>{{t.content}}</h3>
+                            <h5>{{t.content}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="NameNav">
+                    <h5>In Review</h5>
+                </div>
+                <div *ngFor="let t of InProgress" class="taskContainer">
+                    <div class="task headerTask">
+                        <h5>{{t.name}}</h5>
+                    </div>
+                    <div class="task mainTask">
+                        <div class="contentTask">
+                            <h5>{{t.content}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="NameNav">
+                    <h5>Done</h5>
+                </div>
+                <div *ngFor="let t of InProgress" class="taskContainer">
+                    <div class="task headerTask">
+                        <h5>{{t.name}}</h5>
+                    </div>
+                    <div class="task mainTask">
+                        <div class="contentTask">
+                            <h5>{{t.content}}</h5>
                         </div>
                     </div>
                 </div>
