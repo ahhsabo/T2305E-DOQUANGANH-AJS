@@ -21,15 +21,17 @@
 
             <div class="col-3">
                 <div class="NameNav">
-                    <h5>In Progress</h5>
+                    <p><b>In Progress</b></p>
                 </div>
-                <div *ngFor="let t of InProgress" class="taskContainer">
-                    <div class="task headerTask">
-                        <h5>{{t.name}}</h5>
-                    </div>
-                    <div class="task mainTask">
-                        <div class="contentTask">
-                            <h5>{{t.content}}</h5>
+                <div class="main">
+                    <div *ngFor="let t of InProgress" class="taskContainer">
+                        <div class="task headerTask">
+                            <p><b>{{t.name}}</b></p>
+                        </div>
+                        <div class="task mainTask">
+                            <div class="contentTask">
+                                <p>{{t.content}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -37,15 +39,17 @@
 
             <div class="col-3">
                 <div class="NameNav">
-                    <h5>In Review</h5>
+                    <p><b>In Review</b></p>
                 </div>
-                <div *ngFor="let t of InProgress" class="taskContainer">
-                    <div class="task headerTask">
-                        <h5>{{t.name}}</h5>
-                    </div>
-                    <div class="task mainTask">
-                        <div class="contentTask">
-                            <h5>{{t.content}}</h5>
+                <div class="main">
+                    <div *ngFor="let t of InReview" class="taskContainer">
+                        <div class="task headerTask">
+                            <p><b>{{t.name}}</b></p>
+                        </div>
+                        <div class="task mainTask">
+                            <div class="contentTask">
+                                <p>{{t.content}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -53,15 +57,17 @@
 
             <div class="col-3">
                 <div class="NameNav">
-                    <h5>Done</h5>
+                    <p><b>Done</b></p>
                 </div>
-                <div *ngFor="let t of InProgress" class="taskContainer">
-                    <div class="task headerTask">
-                        <h5>{{t.name}}</h5>
-                    </div>
-                    <div class="task mainTask">
-                        <div class="contentTask">
-                            <h5>{{t.content}}</h5>
+                <div class="main">
+                    <div *ngFor="let t of Done" class="taskContainer">
+                        <div class="task headerTask">
+                            <p><b>{{t.name}}</b></p>
+                        </div>
+                        <div class="task mainTask">
+                            <div class="contentTask">
+                                <p>{{t.content}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
